@@ -5,6 +5,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const [showSectionIndicator, setShowSectionIndicator] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   // Smooth scroll to section
   const scrollToSection = (sectionId) => {
@@ -17,6 +18,34 @@ function App() {
       // Show section indicator
       setShowSectionIndicator(true)
       setTimeout(() => setShowSectionIndicator(false), 2000)
+    }
+  }
+
+  // Handle form submission
+  const handleFormSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    try {
+      const formData = new FormData(e.target)
+      const response = await fetch('https://formspree.io/f/xovlrejw', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      
+      if (response.ok) {
+        alert('Message sent successfully!')
+        e.target.reset()
+      } else {
+        alert('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      alert('Error sending message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -169,15 +198,13 @@ function App() {
             <div className="about-content">
               <div className="about-text">
                 <p>
-                  I'm a passionate developer who loves creating innovative solutions 
-                  and bringing ideas to life through code. With a strong foundation 
-                  in both frontend and backend development, I enjoy building 
-                  user-friendly applications that solve real-world problems.
+                I’m a developer passionate about building applications that are both functional and intuitive, with a 
+                growing interest in how AI can improve the way we work and live. My experience spans frontend and backend development, 
+                and I enjoy turning ideas into real, working solutions. 
                 </p>
                 <p>
-                  When I'm not coding, you can find me exploring new technologies, 
-                  contributing to open-source projects, or sharing knowledge with 
-                  the developer community.
+                Outside of coding, I stay active by playing soccer, exploring the
+                outdoors, and camping — activities that keep me curious, energized, and inspired.
                 </p>
               </div>
             </div>
@@ -288,10 +315,7 @@ function App() {
             <h2 className="section-title">Get In Touch</h2>
             <div className="contact-content">
               <div className="contact-info">
-                <div className="contact-item">
-                  <h3>Email</h3>
-                  <p>antonio.bravo@example.com</p>
-                </div>
+                
                 <div className="contact-item">
                   <h3>LinkedIn</h3>
                   <p>linkedin.com/in/antoniobravo</p>
@@ -302,17 +326,38 @@ function App() {
                 </div>
               </div>
               <div className="contact-form">
-                <form>
+                <form 
+                  action="https://formspree.io/f/xovlrejw"
+                  method="POST"
+                  onSubmit={handleFormSubmit}
+                >
                   <div className="form-group">
-                    <input type="text" placeholder="Your Name" required />
+                    <input 
+                      type="text" 
+                      name="name"
+                      placeholder="Your Name" 
+                      required 
+                    />
                   </div>
                   <div className="form-group">
-                    <input type="email" placeholder="Your Email" required />
+                    <input 
+                      type="email" 
+                      name="email"
+                      placeholder="Your Email" 
+                      required 
+                    />
                   </div>
                   <div className="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <textarea 
+                      name="message"
+                      placeholder="Your Message" 
+                      rows="5" 
+                      required
+                    ></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary">Send Message</button>
+                  <button type="submit" className="btn btn-primary">
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </button>
                 </form>
               </div>
             </div>
