@@ -198,7 +198,7 @@ function App() {
             <div className="about-content">
               <div className="about-text">
                 <p>
-                I’m a developer passionate about building applications that are both functional and intuitive, with a 
+                I'm a developer passionate about building applications that are both functional and intuitive, with a 
                 growing interest in how AI can improve the way we work and live. My experience spans frontend and backend development, 
                 and I enjoy turning ideas into real, working solutions. 
                 </p>
@@ -206,6 +206,9 @@ function App() {
                 Outside of coding, I stay active by playing soccer, exploring the
                 outdoors, and camping — activities that keep me curious, energized, and inspired.
                 </p>
+              </div>
+              <div className="college-logo">
+                <img src="/src/assets/logo.avif" alt="College Logo" />
               </div>
             </div>
           </div>
@@ -218,14 +221,20 @@ function App() {
             <div className="projects-grid">
               <div className="project-card">
                 <div className="project-image">
-                  <div className="project-placeholder">Project 1</div>
+                  <div className="project-placeholder">HabitTrack</div>
                 </div>
                 <div className="project-content">
-                  <h3>E-Commerce Platform</h3>
-                  <p>A full-stack e-commerce solution with React, Node.js, and MongoDB.</p>
+                  <h3>HabitTrack</h3>
+                  <p className="project-role">Full Stack Engineer • 2025</p>
+                  <p>Full-stack habit tracking app with user authentication, image uploads, group formation, and responsive React/TypeScript frontend.</p>
+                  <div className="project-status">
+                    <span className="status-tag coming-soon">Coming Soon</span>
+                  </div>
                   <div className="project-tech">
                     <span className="tech-tag">React</span>
+                    <span className="tech-tag">TypeScript</span>
                     <span className="tech-tag">Node.js</span>
+                    <span className="tech-tag">JWT</span>
                     <span className="tech-tag">MongoDB</span>
                   </div>
                 </div>
@@ -233,30 +242,36 @@ function App() {
 
               <div className="project-card">
                 <div className="project-image">
-                  <div className="project-placeholder">Project 2</div>
+                  <img src="/src/assets/footytrack.png" alt="FootyTrack Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
-                  <h3>Task Management App</h3>
-                  <p>A collaborative task management application with real-time updates.</p>
+                  <h3>FootyTrack</h3>
+                  <p className="project-role">Computer Vision Engineer • 2025</p>
+                  <p>Real-time computer vision pipeline using OpenCV and YOLO to detect players and the ball, with player metrics and team analytics.</p>
                   <div className="project-tech">
-                    <span className="tech-tag">Vue.js</span>
-                    <span className="tech-tag">Firebase</span>
-                    <span className="tech-tag">Tailwind</span>
+                    <span className="tech-tag">OpenCV</span>
+                    <span className="tech-tag">YOLO</span>
+                    <span className="tech-tag">Python</span>
+                    <span className="tech-tag">Computer Vision</span>
                   </div>
                 </div>
               </div>
 
               <div className="project-card">
                 <div className="project-image">
-                  <div className="project-placeholder">Project 3</div>
+                  <img src="/src/assets/free.png" alt="FreeFinder Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
-                  <h3>Portfolio Website</h3>
-                  <p>A responsive portfolio website built with modern web technologies.</p>
+                  <h3>FreeFinder</h3>
+                  <p className="project-role">Full-Stack Engineer • 2024-2025</p>
+                  <p>A marketplace platform for posting and finding free items. Built responsive React interface with Node.js backend, MongoDB database, and deployed on Azure.</p>
                   <div className="project-tech">
-                    <span className="tech-tag">React</span>
-                    <span className="tech-tag">CSS3</span>
-                    <span className="tech-tag">JavaScript</span>
+                    <span className="tech-tag">React.js</span>
+                    <span className="tech-tag">Node.js</span>
+                    <span className="tech-tag">Express.js</span>
+                    <span className="tech-tag">MongoDB</span>
+                    <span className="tech-tag">Cypress</span>
+                    <span className="tech-tag">Azure</span>
                   </div>
                 </div>
               </div>
@@ -273,11 +288,10 @@ function App() {
                 <h3>Frontend</h3>
                 <div className="skill-tags">
                   <span className="skill-tag">React</span>
-                  <span className="skill-tag">Vue.js</span>
-                  <span className="skill-tag">JavaScript</span>
-                  <span className="skill-tag">TypeScript</span>
-                  <span className="skill-tag">HTML5</span>
-                  <span className="skill-tag">CSS3</span>
+                  <span className="skill-tag">Next.js</span>
+                  <span className="skill-tag">HTML</span>
+                  <span className="skill-tag">JavaScript/TypeScript</span>
+                  <span className="skill-tag">CSS</span>
                   <span className="skill-tag">Tailwind CSS</span>
                 </div>
               </div>
@@ -287,8 +301,6 @@ function App() {
                 <div className="skill-tags">
                   <span className="skill-tag">Node.js</span>
                   <span className="skill-tag">Express</span>
-                  <span className="skill-tag">Python</span>
-                  <span className="skill-tag">Django</span>
                   <span className="skill-tag">PostgreSQL</span>
                   <span className="skill-tag">MongoDB</span>
                 </div>
@@ -297,12 +309,15 @@ function App() {
               <div className="skill-category">
                 <h3>Tools & Others</h3>
                 <div className="skill-tags">
+                <span className="skill-tag">Python</span>
                   <span className="skill-tag">Git</span>
                   <span className="skill-tag">Docker</span>
                   <span className="skill-tag">AWS</span>
                   <span className="skill-tag">Figma</span>
                   <span className="skill-tag">Jest</span>
-                  <span className="skill-tag">Webpack</span>
+                  <span className="skill-tag">Azure</span>
+                  <span className="skill-tag">UNIX Shell</span>
+                  <span className="skill-tag">Cypress</span>
                 </div>
               </div>
             </div>
@@ -314,17 +329,9 @@ function App() {
           <div className="container">
             <h2 className="section-title">Get In Touch</h2>
             <div className="contact-content">
-              <div className="contact-info">
                 
-                <div className="contact-item">
-                  <h3>LinkedIn</h3>
-                  <p>linkedin.com/in/antoniobravo</p>
-                </div>
-                <div className="contact-item">
-                  <h3>GitHub</h3>
-                  <p>github.com/antoniobravo</p>
-                </div>
-              </div>
+              
+                
               <div className="contact-form">
                 <form 
                   action="https://formspree.io/f/xovlrejw"
@@ -359,10 +366,25 @@ function App() {
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
+                
+                <div className="social-connect">
+                  <p>Or connect with me on LinkedIn</p>
+                  <a 
+                    href="https://www.linkedin.com/in/bravo-antonio03" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
+                    <img src="/src/assets/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
+<footer>
+          <p>© 2025 Antonio Bravo. All rights reserved.</p>
+        </footer>
       </main>
 
       {/* Section Indicator */}
