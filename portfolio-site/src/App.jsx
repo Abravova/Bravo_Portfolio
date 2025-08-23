@@ -207,9 +207,9 @@ function App() {
                 outdoors, and camping — activities that keep me curious, energized, and inspired.
                 </p>
               </div>
-              <div className="college-logo">
-                <img src="/src/assets/logo.avif" alt="College Logo" />
-              </div>
+                              <div className="college-logo">
+                  <img src="/logo.avif" alt="College Logo" />
+                </div>
             </div>
           </div>
         </section>
@@ -221,7 +221,7 @@ function App() {
             <div className="projects-grid">
               <div className="project-card">
                 <div className="project-image">
-                  <div className="project-placeholder">HabitTrack</div>
+                  <img src="./habittrack.png" alt="HabitTrack Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
                   <h3>HabitTrack</h3>
@@ -242,7 +242,7 @@ function App() {
 
               <div className="project-card">
                 <div className="project-image">
-                  <img src="/src/assets/footytrack.png" alt="FootyTrack Logo" className="project-logo" />
+                  <img src="/footytrack.png" alt="FootyTrack Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
                   <h3>FootyTrack</h3>
@@ -259,7 +259,7 @@ function App() {
 
               <div className="project-card">
                 <div className="project-image">
-                  <img src="/src/assets/free.png" alt="FreeFinder Logo" className="project-logo" />
+                  <img src="/free.png" alt="FreeFinder Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
                   <h3>FreeFinder</h3>
@@ -375,7 +375,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="social-link"
                   >
-                    <img src="/src/assets/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
+                    <img src="/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
                   </a>
                 </div>
               </div>
