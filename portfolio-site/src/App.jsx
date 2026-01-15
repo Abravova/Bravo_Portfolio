@@ -219,26 +219,29 @@ function App() {
           <div className="container">
             <h2 className="section-title">My Projects</h2>
             <div className="projects-grid">
-              <div className="project-card">
+              <a 
+                href="https://habit-tracker-public-b7dvprxys-abravovas-projects.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
                 <div className="project-image">
-                  <img src="./habittrack.png" alt="HabitTrack Logo" className="project-logo" />
+                  <img src="./habittracker.png" alt="HabitTrack Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
                   <h3>HabitTrack</h3>
                   <p className="project-role">Full Stack Engineer • 2025</p>
-                  <p>Full-stack habit tracking app with user authentication, image uploads, group formation, and responsive React/TypeScript frontend.</p>
-                  <div className="project-status">
-                    <span className="status-tag coming-soon">Coming Soon</span>
-                  </div>
+                  <p>Remake of a class project habit tracking app, now rebuilt with TypeScript and SQL. Features user authentication, image uploads, group formation, and a responsive React frontend. Currently in progress adding previous features.</p>
                   <div className="project-tech">
                     <span className="tech-tag">React</span>
                     <span className="tech-tag">TypeScript</span>
-                    <span className="tech-tag">Node.js</span>
-                    <span className="tech-tag">JWT</span>
-                    <span className="tech-tag">MongoDB</span>
+                    <span className="tech-tag">Tailwind CSS</span>
+                    <span className="tech-tag">Supabase</span>
+                    <span className="tech-tag">SQL</span>
                   </div>
                 </div>
-              </div>
+              </a>
 
               <div className="project-card">
                 <div className="project-image">
