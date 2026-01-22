@@ -220,14 +220,14 @@ function App() {
             <h2 className="section-title">My Projects</h2>
             <div className="projects-grid">
               <a 
-                href="https://habit-tracker-public-b7dvprxys-abravovas-projects.vercel.app"
+                href="https://habit-track-v2-public.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-card"
                 style={{ textDecoration: 'none', color: 'inherit' }}
               >
                 <div className="project-image">
-                  <img src="./habittracker.png" alt="HabitTrack Logo" className="project-logo" />
+                  <img src="./habit-track-v2.png" alt="HabitTrack Logo" className="project-logo" />
                 </div>
                 <div className="project-content">
                   <h3>HabitTrack</h3>
