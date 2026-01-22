@@ -231,15 +231,17 @@ function App() {
                 </div>
                 <div className="project-content">
                   <h3>HabitTrack</h3>
-                  <p className="project-role">Full Stack Engineer • 2025</p>
-                  <p>Remake of a class project habit tracking app, now rebuilt with TypeScript and SQL. Features user authentication, image uploads, group formation, and a responsive React frontend. Currently in progress adding previous features.</p>
-                  <div className="project-tech">
-                    <span className="tech-tag">React</span>
-                    <span className="tech-tag">TypeScript</span>
-                    <span className="tech-tag">Tailwind CSS</span>
-                    <span className="tech-tag">Supabase</span>
-                    <span className="tech-tag">SQL</span>
-                  </div>
+                    <p className="project-role">Full Stack Engineer • 2025</p>
+  <p>Full-stack habit tracking app with user authentication, daily habit management, and AWS S3 image uploads for completion proof. Built with React, Node.js, Express, and MongoDB. Deployed on Vercel and Render.</p>
+  <div className="project-tech">
+    <span className="tech-tag">React</span>
+    <span className="tech-tag">JavaScript</span>
+    <span className="tech-tag">Node.js</span>
+    <span className="tech-tag">Express</span>
+    <span className="tech-tag">MongoDB</span>
+    <span className="tech-tag">AWS S3</span>
+    <span className="tech-tag">JWT</span>
+  </div>
                 </div>
               </a>
 
