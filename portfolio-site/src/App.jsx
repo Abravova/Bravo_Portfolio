@@ -245,6 +245,31 @@ function App() {
                 </div>
               </a>
 
+              <a 
+                href="https://social-sports-app-zephyr.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <div className="project-image">
+                  <img src="./Zephyr.png" alt="Zephyr Logo" className="project-logo" />
+                </div>
+                <div className="project-content">
+                  <h3>Zephyr</h3>
+                  <p className="project-role">Frontend Engineer • 2025</p>
+                  <p>Interactive social sports app for finding and joining pickup games in your area. Features an interactive map with Leaflet, game management with real-time attendee tracking, address autocomplete, sport filters, social feed, and stats logging. Built with React, TypeScript, and Material-UI.</p>
+                  <div className="project-tech">
+                    <span className="tech-tag">React</span>
+                    <span className="tech-tag">TypeScript</span>
+                    <span className="tech-tag">Material-UI</span>
+                    <span className="tech-tag">Leaflet</span>
+                    <span className="tech-tag">Vite</span>
+                    <span className="tech-tag">OpenStreetMap</span>
+                  </div>
+                </div>
+              </a>
+
               <div className="project-card">
                 <div className="project-image">
                   <img src="/footytrack.png" alt="FootyTrack Logo" className="project-logo" />
